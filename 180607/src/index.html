@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>踩坑那些事</title>
+<link rel="stylesheet" href="./css/index.css">
+<base target="_blank">
+</head>
+<body>
+<h1>踩坑那些事</h1>
+
+
+<p>&nbsp;</p>
+
+
+<h2>踩坑分类</h2>
+
+<h3>技术问题:</h3>
+<p>
+1、浏览器兼容
+早期浏览器的 css 、dom 兼容性;浏览器未支持的 html5 api、css3 属性、es5、es6 特性
+</p>
+<p>
+2、硬件设备、网络
+</p>
+
+<p>&nbsp;</p>
+
+<h3>人为问题：</h3>
+<p>
+开发疏忽、沟通问题、流程不规范、用户习惯
+</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<h2>案例：移动端遇到的一些坑</h2>
+
+<p>1、rem败给了用户习惯：非标准字号</p>
+
+<p>2、vw败给了微信</p>
+
+<p>3、移动端败给了UC</p>
+
+<p>4、不够规范的流程：妖恋项目中遇到的问题</p>
+
+<h3>其它：</h3>
+
+<p>1、<a href="https://zhuanlan.zhihu.com/p/27690199">H5播放的避坑指南</a></p>
+
+<p>2、<a href="https://zhuanlan.zhihu.com/p/30419351">移动端开发踩过的一些坑</a></p>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<h2>再讲PS切图</h2>
+<h3>1、传统切图（手动切图、参考线切图）</h3>
+<p>重要步骤：基于参考线的切片</p>
+<h3>2、精准切图（自动切图、复制 CSS）</h3>
+<p>重要步骤：生成——图像资源</p>
+<h3>3、其它切图小技巧</h3>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<h2>VS CODE插件</h2>
+<h3>1、CSS Peek</h3>
+<a href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek">https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek</a>
+<p>使用此插件，你可以追踪至样式表中 CSS 类和 ids 定义的地方。当你在 HTML 文件中右键单击选择器时，选择“ Go to Definition 和 Peek definition ”选项，它便会给你发送样式设置的 CSS 代码。</p>
+<p><img src="./images/1-v2.gif" alt=""></p>
+
+<h3>2、Regex Previewer</h3>
+<a href="https://marketplace.visualstudio.com/items?itemName=chrmarti.regex">https://marketplace.visualstudio.com/items?itemName=chrmarti.regex</a>
+<p>这是一个用于实时测试正则表达式的实用工具。它可以将正则表达式模式应用在任何打开的文件上，并高亮所有的匹配项。</p>
+<p><img src="./images/2-in_action.gif" alt=""></p>
+
+
+
+
+<!-- 解决方案：
+动态rem适配移动端
+html的font-size=document.documentElement.clientWidth / 10 +'px'; -->
+
+<!-- <h2>1. 自动播放问题</h2>
+<h3>1.1通过autoplay属性</h3>
+如：
+<pre>
+	<code class="language-text">&lt;video autoplay&gt;&lt;video/&gt;
+	</code>
+</pre>
+iOS下并不支持这个属性，在iOS下必须给webview设置：
+<pre>
+	<code class="language-text">
+	self.wView.allowsInlineMediaPlayback = YES;
+	self.wView.mediaPlaybackRequiresUserAction = NO;
+	</code>
+</pre>
+
+<h3>1.2通过直接调用video.play()方法</h3>
+<p>在一些情况下我们想加入一些判断逻辑，如判断用户网络环境，在wifi下自动播放，在4g环境下给出提示，这中情况下就适合直接选中video并调用video.play来播放视频</p> -->
+
+
+<!-- <h3>如果你想让别人帮忙看你的代码里存在的问题和疑惑</h3>
+<p><a href="https://codepen.io/">CodePen</a></p>
+<p><a href="https://jsfiddle.net/">Create a new fiddle</a></p>
+<p><a href="http://runjs.cn/">RunJS - 在线编辑、展示、分享、交流你的 JavaScript 代码</a></p>
+
+
+<h3>如果你想要快速实现某个业务的程序，比如搭一个论坛、博客、电商网站等等，请上：</h3>
+<p><a href="https://www.oschina.net/">开源中国 - 找到您想要的开源项目，分享和交流</a></p>
+
+
+<h3>快速搜索各类轮子，框架，组件，工具库请上：</h3>
+<p><a href="https://github.com/">Build software better, together</a></p>
+
+
+<h3>阅读国外的技术文章请上：</h3>
+<p><a href="https://news.ycombinator.com/">Hacker News</a></p>
+<p><a href="https://medium.com/">https://medium.com/</a></p>
+
+
+<p>Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。可在Babel官网 (<a href="http://babeljs.io/">http://babeljs.io/</a>) 查看</p> -->
+
+
+
+<script src="./js/test.js"></script>
+</body>
+</html>
