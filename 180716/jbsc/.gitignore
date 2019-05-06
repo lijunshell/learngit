@@ -1,0 +1,11 @@
+# webstorm idea
+.idea
+.vscode
+
+# sass cache
+.sass-cache
+
+
+node_modules/
+
+dist/
